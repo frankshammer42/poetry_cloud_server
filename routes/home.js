@@ -1,11 +1,11 @@
-var secrets = require('../config/secrets');
+let secrets = require('../config/secrets');
 
 module.exports = function (router) {
 
-    var homeRoute = router.route('/');
+    let homeRoute = router.route('/');
 
     homeRoute.get(function (req, res) {
-        var connectionString = secrets.token;
+        let connectionString = secrets.token;
         res.json({ message: 'My connection string is ' + connectionString });
     });
 
