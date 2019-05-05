@@ -1,4 +1,4 @@
-let secrets = require('../config/secrets');
+let secrets = require('../config/secrets_char');
 
 module.exports = function (router) {
 
